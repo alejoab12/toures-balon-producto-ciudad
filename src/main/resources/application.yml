@@ -1,0 +1,19 @@
+spring: #Indica que cuando usted inicie por defecto va a tomar la configuracion de desarrollo, que es la que tiene aqui en el application.yml
+    profiles:
+        active:
+        - dev
+    data:
+        mongodb:
+            port: 27017
+            uri: mongodb://localhost/touresbalon-producto-ciudad
+            password: ciudad
+            username: producto
+
+server:
+    port: 8183
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://172.17.0.4:8761/eureka
+    instance:
+        prefer-ip-address: true
