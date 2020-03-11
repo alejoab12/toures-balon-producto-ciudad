@@ -1,6 +1,6 @@
 spring:
   application:
-    name: touresbalon-producto-ciudad
+    name: toures-balon-producto-ciudad
   profiles: prod #Esta es la configuracion que va a tomar del config server, que es otro servicio que centraliza la configuracion desde github
   cloud:
     config:
