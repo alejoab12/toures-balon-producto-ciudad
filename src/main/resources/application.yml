@@ -1,4 +1,6 @@
-spring: #Indica que cuando usted inicie por defecto va a tomar la configuracion de desarrollo, que es la que tiene aqui en el application.yml
+spring:
+    application:
+      name: toures-balon-producto-ciudad #Indica que cuando usted inicie por defecto va a tomar la configuracion de desarrollo, que es la que tiene aqui en el application.yml
     profiles:
         active:
         - dev
