@@ -49,4 +49,23 @@ class ServicioCiudadImpl : ServicioCiudad {
         return listaGetCiudadDto
     }
 
+    /**
+     * Metodo que obtiene todas als ciudades registradas
+     */
+    override fun obtenerCiudades(): MutableList<GetCiudadDto>{
+        var result = ciudadRepository.findAll()
+        var listGetCiudadDto = mutableListOf<GetCiudadDto>()
+        result.forEach {
+            var getCiudadDto = GetCiudadDto()
+            var ciudad = CiudadVo(it.ciudad)
+            ciudad.validaString()
+            getCiudadDto.ciudad = ciudad.getToCapitalCase()
+            getCiudadDto.codigoCiudad = it.codigoCiudad
+            getCiudadDto.codigoPais = it.codigoPais
+            getCiudadDto.pais = it.pais
+            getCiudadDto.id = it.id.toHexString()
+            listGetCiudadDto.add(getCiudadDto)
+        }
+        return  listGetCiudadDto
+    }
 }

@@ -16,4 +16,9 @@ interface ServicioCiudad {
      */
     fun encontrarCiudadQueContiene(abreviaturaCiudad: String): MutableList<GetCiudadDto>
 
+    /**
+     * Metodo que obtiene todas als ciudades registradas
+     */
+    fun obtenerCiudades(): MutableList<GetCiudadDto>
+
 }
