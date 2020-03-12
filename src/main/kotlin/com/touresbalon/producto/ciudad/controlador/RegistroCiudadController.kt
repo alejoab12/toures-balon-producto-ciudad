@@ -1,4 +1,4 @@
-package com.touresbalon.producto.ciudad.controlafor
+package com.touresbalon.producto.ciudad.controlador
 
 import com.touresbalon.producto.ciudad.dto.CiudadDto
 import com.touresbalon.producto.ciudad.dto.RegistroCiudadDto
