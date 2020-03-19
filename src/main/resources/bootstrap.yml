@@ -4,4 +4,4 @@ spring:
   profiles: prod #Esta es la configuracion que va a tomar del config server, que es otro servicio que centraliza la configuracion desde github
   cloud:
     config:
-      uri: http://172.17.0.3:8888 #ip del servidor de configuracion, es un servicio mkas de spring cloud
+      uri: http://172.17.0.2:8888 #ip del servidor de configuracion, es un servicio mkas de spring cloud
